@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Manager</title>
+ <link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>User Manager</h1>
+      <input type="text" id="searchBar" placeholder="Search users..." />
+      <input type="password" id="password" placeholder="Password" required />
+<input type="text" id="rol" placeholder="Role" required />
+    </header>
+
+    <main>
+     <section class="user-display">
+  <h2>Registered Users</h2>
+  <div id="userList" class="card-list"></div>
+</section>
+      <section class="form-section">
+        <h2>Add / Edit User</h2>
+       <form id="userForm">
+  <input type="hidden" id="userId" />
+  <input type="text" id="username" placeholder="Name" required />
+  <input type="email" id="email" placeholder="Email" required />
+  <input type="password" id="password" placeholder="Password" required />
+  <input type="text" id="rol" placeholder="Role" required />
+  <div class="form-buttons">
+    <button type="submit">Save</button>
+    <button type="reset">Clear</button>
+  </div>
+</form>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
